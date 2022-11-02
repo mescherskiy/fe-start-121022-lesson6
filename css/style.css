@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header .wrapper{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.logo,
+nav{
+    width: 50%;
+}
+
+.logo{
+    color: rgba(188, 67, 106, 1);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+nav{
+    display: flex;
+    align-items: baseline;
+}
+
+nav ul{
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    margin: 0;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+nav li {
+    padding-block-end: 15px;
+}
+
+nav li>a{
+    color: rgba(119, 102, 119, 1);
+    text-decoration: none;
+    list-style: none;
+}
+
+nav li>a:hover{
+    font-weight: 700;
+    color: rgba(188, 67, 106, 1);
+}
+
+nav button{
+    color: white;
+    padding: 10px;
+    background-color: rgba(56, 110, 65, 1);
+    border-radius: 4px;
+    border: none;
+    width: 20%;
+}
+
+.title-text{
+    width: 40%;
+    margin-top: 200px;
+}
+
+.title-text>h2{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.title-text>h2 span{
+    text-transform: uppercase;
+    color: rgba(188, 67, 106, 1);
+}
+
+.title-text>p{
+    font-size: 18px;
+    color: #7A7A7A;
+}
+
+/* main .wrapper{
+    overflow: hidden;
+} */
+
+.square{
+    border: 10px solid #386E41;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: -50px;
+    margin-top: 35px
+}
+
+.above-form{
+    margin-top: 230px;
+    color: rgba(118, 118, 118, 1);
+    font-size: 18px;
+}
+
+.above-form::after{
+    content: url(../img/arrow-right.png);
+    padding-left: 30px;
+}
+
+
+.form{
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgba(56, 110, 65, 1);
+    border-radius: 8px;
+}
+
+.form form{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.form form>label{
+    width: 20%;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+}
+
+.form form>input[type="submit"]{
+    width: 10%;
+    background-color: rgba(188, 67, 106, 1);
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+
+.form form>label::after{
+    content: url(../img/arrow-down.png);
+    position: relative;
+    float: right;
+}
+
+.under-form{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 18px;
+}
+
+.under-form::after{
+    content: url(../img/chevrons-down.png);
+    position: relative;
+    top: 35px;
+    left: -70px;
+}
+
+main{
+    overflow: hidden;
+}
+
+.circle{
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    top: 20%;
+    left: 60%;
+
+}
+
+.circle img{
+    height: 100%;
+}
